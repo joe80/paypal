@@ -1,0 +1,70 @@
+<?php
+/**
+*
+* @package phpBB Extension - Paypal - Italian
+* @copyright (c) 2015 tas2580 (https://tas2580.net)
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
+
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+
+if (empty($lang) || !is_array($lang))
+{
+	$lang = array();
+}
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+//
+// Placeholders can now contain order information, e.g. instead of
+// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+// translators to re-order the output of data while ensuring it remains correct
+//
+// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+// equally where a string contains only two placeholders which are used to wrap text
+// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+//
+// Some characters you may want to copy&paste:
+// ’ » “ ” …
+//
+$lang = array_merge($lang, array(
+	'PAYPAL'							=> 'Donazioni Paypal',
+	'ACP_PAYPAL_TITLE'					=> 'Impostazioni Paypal',
+	'ACP_PAYPAL_DEFAULT_ITEM'			=> 'Descrizione Paypal',
+	'ACP_PAYPAL_DEFAULT_ITEM_EXPLAIN'	=> 'Si prega di impostare il testo, di una descrizione',
+	'ACP_PAYPAL_EMAIL'					=> 'Paypal-E-Mail',
+	'ACP_PAYPAL_EMAIL_EXPLAIN'			=> 'Imposta la tua E-Mail Paypal qui - esempio: xxxx@xxx.it',
+	'ACP_PAYPAL_DESCRIPTION'			=> 'Descrizione',
+	'ACP_PAYPAL_DESCRIPTION_EXPLAIN'	=> 'È possibile impostare un testo che verrà visualizzato nella vostra board sulla pagina di Paypal.',
+	'ACP_CURRENCY_CODE'					=> 'Valuta',
+	'ACP_CURRENCY_CODE_EXPLAIN'			=> 'Scegliere la valuta che sarà visualizzata per impostazione predefinita nel menù a discesa nella pagina di Paypal nella vostra board. Le valute, è possibile aggiungerle o rimuoverle in common.php - Si prega di adeguare la vostra dichiarazione sotto la propria responsabilità e con grande cura.',
+	'ACP_SUBMIT'						=> 'Invia le tue impostazioni',
+	'ACP_AMOUNT_LIST'					=> 'Elenco importo',
+	'ACP_AMOUNT'						=> 'Obiettivo',
+	'ACP_ADD_AMOUNT'					=> 'Imposta obiettivo qui - esempio: 1000 il risultato è 10.00',
+	'ACP_SETTINGS'						=> 'Imposta le tue Informazioni Paypal',
+	'ACP_SAVED'							=> 'I vostri dati sono stati memorizzati',
+
+	'PAYPAL_INFO'						=> 'Dona con PayPal un importo fisso pari a:',
+	'PAYPAL_TEXT'						=> 'Tutti coloro che vogliono contribuire a questo progetto potranno farlo con una piccola donazione.',
+	'PAYPAL_MSG'						=> 'Si prega di fare clic sul menù a discesa per inserire una somma da donare, fate clic sul pulsante per donare.',
+	'PAYPAL_DONATION'					=> 'Importo della donazione',
+	'DONATION_INFO'						=> 'Grazie per la donazione.',
+
+	'DONATION_TITLE'			=> 'Fai la tua donazione',
+	'PAYPALINFO_EXPLAIN'		=> 'Sostieni questo progetto; fai la tua donazione tramite PayPal.',
+
+	'DONATION_'					=> 'N/D',
+	'DONATION_EUR'				=> 'Euro (EUR)',
+	'DONATION_USD'				=> 'U.S. Dollars (USD)',
+	'DONATION_AUD'				=> 'Australian Dollars (AUD)',
+	'DONATION_CAD'				=> 'Canadian Dollars (CAD)',
+	'DONATION_CHF'				=> 'Swiss Francs (CHF)',
+	'DONATION_GBP'				=> 'British Pounds (GBP)',
+
+	'COPYRIGHT_PAYPALEXTENSION'	=> 'Paypal-Extension creata da <a href="https://tas2580.net">tas2580</a> 2015',
+));
